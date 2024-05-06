@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detective Conan</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img class="img-fluid" src="./Images/logo.jpeg.jpg" alt="mini-conan"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header
+      id="home"
+      class="main-header vh-100 d-flex align-items-center bg-light"
+    >
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 col-">
+            <h1 class="">Detective Conan</h1>
+            <p class="text-muted">
+              The truth must be a great success in our eyes or be hidden behind
+              apperances of deception!
+            </p>
+            <a class="btn btn-danger" href="#">Get Starting</a>
+            <a href="" class="btn btn-primary-shadow">
+              <span class="fa-stack fa-1x me-2">
+                <i class="fa-solid fa-circle text-primary fa-stack-2x"></i>
+                <i class="fa-solid fa-play fa-stack-1x fa-inverse"></i>
+              </span>
+              Watch now
+            </a>
+          </div>
+          <div class="col-lg-5">
+            <div class="position-relative">
+              <!--so2al-->
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#e50f41"
+                  d="M58.7,-20.8C67.3,7.3,59.4,39.1,37.4,56.2C15.4,73.3,-20.7,75.7,-45,58.8C-69.4,41.8,-82,5.6,-72.5,-23.8C-63,-53.2,-31.5,-75.7,-3.2,-74.6C25.1,-73.6,50.2,-49,58.7,-20.8Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+              <img
+                class="img-fluid position-absolute start-50 top-50 translate-middle"
+                src="./Images/dc02.png"
+                alt="Conan"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="info" class="info py-5">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-lg-3">
+              <div
+                class="info bg-warning bg-opacity-25 d-flex rounded-3 p-3 align-items-center"
+              >
+                <i class="fa-solid fa-tv text-warning fa-3x"></i>
+                <div class="info-content ms-3">
+                  <h3 class="m-0 fs-5">+1K</h3>
+                  <p class="m-0 text-black">Episode</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div
+                class="info bg-secondary bg-opacity-25 d-flex rounded-3 p-3 align-items-center"
+              >
+                <i class="fa-solid fa-film text-secondary fa-3x"></i>
+                <div class="info-content ms-3">
+                  <h3 class="m-0 fs-5">28</h3>
+                  <p class="m-0 text-black">Movie</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div
+                class="info bg-danger bg-opacity-25 d-flex rounded-3 p-3 align-items-center"
+              >
+                <i class="fa-solid fa-newspaper text-danger fa-3x"></i>
+                <div class="info-content ms-3">
+                  <h3 class="m-0 fs-5">+1K</h3>
+                  <p class="m-0 text-black">Mango</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div
+                class="info bg-info bg-opacity-25 d-flex rounded-3 p-3 align-items-center"
+              >
+                <i class="fa-solid fa-user text-info fa-3x"></i>
+                <div class="info-content ms-3">
+                  <h3 class="m-0 fs-5">25</h3>
+                  <p class="m-0 text-black">Characters</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="popular" class="popular py-5">
+        <header class="section-header text-center">
+          <h2>Most Popular</h2>
+          <p class="text-muted">
+            Choose from hundreds of movies and episodes from the best anime ever
+            ♡︎
+          </p>
+        </header>
+        <div class="container">
+          <ul
+            class="nav nav-pills mb-3 justify-content-center bg-primary bg-opacity-25 p-3 rounded-3"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Movies
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                TV
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Mango
+              </button>
+            </li>
+          </ul>
+          <!--Start Movie Tab-->
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row g-3 py-3">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc05.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-success bg-opacity-25 text-success text-bg-secondary"
+                        >Completed</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc06.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-success bg-opacity-25 text-success text-bg-secondary"
+                        >Completed</span
+                      >
+                      <i class="fa-regular fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc04.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-danger bg-opacity-25 text-danger text-bg-secondary"
+                        >New</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-regular fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Movie Tab-->
+            <!--Start TV Tab-->
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-3 py-3">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc04.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-success bg-opacity-25 text-success text-bg-secondary"
+                        >Completed</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-success bg-opacity-25 text-success text-bg-secondary"
+                        >Completed</span
+                      >
+                      <i class="fa-regular fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-danger bg-opacity-25 text-danger text-bg-secondary"
+                        >New</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End TV Tab-->
+            <!--Start Mango Tab-->
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-3 py-3">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-regular fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="card border-0 popular-card rounded-2">
+                    <img
+                      src="./Images/dc03.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <header
+                      class="d-flex justify-content-between align-items-center pt-3 px-3"
+                    >
+                      <span
+                        class="badge bg-info bg-opacity-25 text-info text-bg-secondary"
+                        >Waiting</span
+                      >
+                      <i class="fa-solid fa-heart text-danger"></i>
+                    </header>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a class="text-decoration-none text-black" href="#"
+                          >Meitantei Conan : Haibara Ai Monogatari - Kurogane no
+                          Mystery train
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted border-bottom pb-3">
+                        The film highlights the story of Ai Hiabara and her past
+                        while recounstructing the story of the mystery train.
+                      </p>
+                    </div>
+                    <footer
+                      class="popular-footer d-flex justify-content-between align-items-center px-3 pb-3"
+                    >
+                      <div class="duration">
+                        <i class="fa-regular fa-clock text-danger"></i>
+                        <span>1hr 30min</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa-regular fa-calendar text-orange"></i>
+                        <span>Winter 2023</span>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Mango Tab-->
+          </div>
+        </div>
+      </section>
+      <section id="news" class="news text-center bg-light py-5">
+        <div class="container">
+          <header class="section-header">
+            <h2>News</h2>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              repudiandae nulla dolor fugit aperiam dignissimos laborum
+              nesciunt, harum veniam numquam libero officiis omnis optio
+              pariatur amet, quam vero voluptate voluptas!
+            </p>
+          </header>
+          <div id="news-carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active p-5">
+                <div class="item border border-5">
+                  <img
+                    src="./Images/dc10.jpeg"
+                    class="img-fluid translate-middle-y"
+                    alt="..."
+                  />
+                  <h3 class="position-relative pb-3">Kara Dennison</h3>
+                  <span class="text-danger">Contributing Writer</span>
+                  <p>
+                    In words of Directive Conan, "one truth pervails" But how
+                    you get to that truth is another matter entirely, Fountrely
+                    for those of us who aren't as briliant as the pint-sized
+                    sleuth there's a new book teaching us how to approach
+                    problems in this way
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item p-5">
+                <div class="item border border-5">
+                  <img
+                    src="./Images/dc11.jpeg"
+                    class="img-fluid translate-middle-y"
+                    alt="..."
+                  />
+                  <h3 class="position-relative pb-3">Kara Dennison</h3>
+                  <span class="text-danger">Contributing Writer</span>
+                  <p>
+                    In words of Directive Conan, "one truth pervails" But how
+                    you get to that truth is another matter entirely, Fountrely
+                    for those of us who aren't as briliant as the pint-sized
+                    sleuth there's a new book teaching us how to approach
+                    problems in this way
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item p-5">
+                <div class="item border border-5">
+                  <img
+                    src="./Images/dc12.jpeg"
+                    class="img-fluid translate-middle-y"
+                    alt="..."
+                  />
+                  <h3 class="position-relative pb-3">Kara Dennison</h3>
+                  <span class="text-danger">Contributing Writer</span>
+                  <p>
+                    In words of Directive Conan, "one truth pervails" But how
+                    you get to that truth is another matter entirely, Fountrely
+                    for those of us who aren't as briliant as the pint-sized
+                    sleuth there's a new book teaching us how to approach
+                    problems in this way
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators position-static">
+              <button
+                type="button"
+                data-bs-target="#news-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              >
+                <img
+                  class="img-fluid rounded-circle"
+                  src="./Images/dc10.jpeg"
+                  alt=""
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#news-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              >
+                <img
+                  class="img-fluid rounded-circle"
+                  src="./Images/dc11.jpeg"
+                  alt=""
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#news-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              >
+                <img
+                  class="img-fluid rounded-circle"
+                  src="./Images/dc12.jpeg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#news-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#news-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="characters" class="characters py-5 text-center">
+        <div class="container">
+          <h3>View Our Characters</h3>
+          <div class="row py-5">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img class="img-fluid" src="./Images/dc13.jpeg" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img class="img-fluid" src="./Images/dc14.jpeg" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img class="img-fluid" src="./Images/dc15.jpeg" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <img class="img-fluid" src="./Images/dc16.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

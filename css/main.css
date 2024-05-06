@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 5rem;
+}
+/*Fonts*/
+:root {
+  --main-color: #066ac9;
+  --main-color-rgb: 6, 106, 201;
+  --secoundry-color: #e50f41;
+  --secoundry-color-rgb: 229, 15, 65;
+  --orange-color-rgb: 235, 126, 20;
+  --body-color: #747579;
+  --black-color: black;
+  --shadow: 0px 0px 2.5rem rgba(29, 58, 83, 0.15);
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--body-color);
+}
+h1,
+h2,
+h3 {
+  color: var(--black-color);
+}
+.text-danger {
+  --bs-danger-rgb: var(--secoundry-color-rgb);
+}
+.text-orange {
+  color: rgb(var(--orange-color-rgb));
+}
+.btn-danger {
+  --bs-btn-bg: var(var(--secoundry-color));
+}
+.text-primary {
+  --bs-primary-rgb: var(--main-color-rgb);
+}
+.btn-primary-shadow span {
+  box-shadow: 0 0 0 0.5rem #066ac996;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  transition: all 0.3s;
+}
+.btn-primary-shadow span:hover {
+  box-shadow: 0 0 0 0.65rem #066ac996;
+}
+.section-header {
+  width: 80%;
+  margin: 0 auto;
+}
+nav .navbar-brand {
+  width: 5rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link {
+  color: var(--body-color);
+}
+.navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+.popular .popular-card {
+  box-shadow: var(--shadow);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: var(--main-color);
+}
+.news .item img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  transform: translateY(50%);
+}
+.news h3::after {
+  content: "";
+  width: 10%;
+  height: 0.25rem;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-indicators [data-bs-target] {
+  width: 3rem;
+  height: 3rem;
+  text-indent: 0;
+  border-radius: 50%;
+}
