@@ -85,6 +85,9 @@
       </div>
     </header>
     <main>
+      <a class="fixed-bottom arrow-top" href="#home"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
       <section id="info" class="info py-5">
         <div class="container">
           <div class="row g-3">
@@ -918,20 +921,143 @@
           <h3>View Our Characters</h3>
           <div class="row py-5">
             <div class="col-lg-3 col-md-4 col-sm-6">
-              <img class="img-fluid" src="./Images/dc13.jpeg" alt="" />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#conan"
+                class="img-fluid"
+                src="./Images/dc13.jpeg"
+                alt=""
+              />
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-              <img class="img-fluid" src="./Images/dc14.jpeg" alt="" />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#ran"
+                class="img-fluid"
+                src="./Images/dc14.jpeg"
+                alt=""
+              />
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-              <img class="img-fluid" src="./Images/dc15.jpeg" alt="" />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#kara"
+                class="img-fluid"
+                src="./Images/dc15.jpeg"
+                alt=""
+              />
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-              <img class="img-fluid" src="./Images/dc16.jpeg" alt="" />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#kyle"
+                class="img-fluid"
+                src="./Images/dc16.jpeg"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
+      <!-- Modal -->
+      <div class="Modals">
+        <div
+          class="modal fade"
+          id="conan"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Conan</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./Images/dc13.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="ran"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ran</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./Images/dc14.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="kara"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Kara</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./Images/dc15.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="kyle"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Kyle</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="./Images/dc16.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="bg-light footer-page pt-5 pb-3">
       <div class="container">
