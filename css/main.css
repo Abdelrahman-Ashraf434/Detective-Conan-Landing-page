@@ -100,7 +100,7 @@ nav .navbar-brand {
 .footer-logo {
   width: 5rem;
 }
-.footer-page i {
+.footer-page .footer-icons i {
   background-color: white;
   padding: 0.8rem;
   box-shadow: var(--shadow);
@@ -109,11 +109,16 @@ nav .navbar-brand {
 .footer-col .list .list-item {
   padding-top: 1rem;
 }
-.footer-col {
-  width: 20%;
-}
 .footer-col .play-store,
 .footer-col .app-store {
   width: 6.5rem;
   height: 2rem;
+}
+.store {
+  padding-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .footer-col {
+    width: 20%;
+  }
 }
